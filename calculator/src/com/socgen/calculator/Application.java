@@ -9,21 +9,22 @@ public class Application {
         // Convertion d'un String en tableau de caractère
 	String calcul = "1+1";
 
-	
-	//String calcul = args[0];
+	//String calcul = args[0]; "A rajouter plus tard"
 	char[] stringInBoard = new char[3];
 	stringInBoard = calcul.toCharArray();
 	System.out.println(stringInBoard);
-//		System.out.println(calcul.split('+'));
+//		
 	// enleve l'opérateur 
-	
-	
-//	//Recupération des variables
+//	System.out.println(calcul.split('+'));
+
+//	//Recupération des characteres
 	
 	for (int i = 0; i < stringInBoard.length; i++) {
         System.out.println(stringInBoard[i]);
         }
-         
+	
+         // convertion d'un String en Double
+	
 //         String calcul1 ="1";
 //         Double valu1 = Double.parseDouble(calcul1);
 //         System.out.println(valu1);
@@ -65,21 +66,21 @@ public class Application {
 		
 		//Condition
 
-//	if("+" != null) {
-//	    
-//    System.out.println();
-//	}else if ("-" != null) { 
-//    System.out.println();
-//
-//	}else if  ("*"!= null) {
-//    System.out.println();
-//
-//	}else if ("/" != null ) {
-//    System.out.println();
-//	
-//	}else ("%" != null) {
-//	System.out.println();
-//	{
+	if("+" != null) {
+	    
+    System.out.println();
+	}else if ("-" != null) { 
+    System.out.println();
+
+	}else if  ("*"!= null) {
+    System.out.println();
+
+	}else if ("/" != null ) {
+    System.out.println();
+	
+	}else ("%" != null) {
+	System.out.println();
+	{
     
     
 
