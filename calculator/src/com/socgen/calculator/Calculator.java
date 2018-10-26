@@ -1,32 +1,44 @@
 package com.socgen.calculator;
 
 public enum Calculator {
+    
+ // Assignation de l'opérateur +,-,/,*
+    
     ADD {
 	@Override
-	public double getResult(Calculate calculate) {
+	public double operation(double value1, double value2) {
 	    // TODO Auto-generated method stub
-	    return calculate.add();
+	    return value1+ value2;
 	}
-    },SUBSTRACT {
+    } 
+   	
+       ,SUBSTRACT {
 	@Override
-	public double getResult(Calculate calculate) {
+	public double operation(double value1, double value2) {
 	    // TODO Auto-generated method stub
-	    return calculate.substract();
+	    return value1 - value2;
 	}
-    },MULTIPLY {
+    } 
+   	
+   	
+       ,MULTIPLY {
 	@Override
-	public double getResult(Calculate calculate) {
+	public double operation(double value1, double value2) {
 	    // TODO Auto-generated method stub
-	    return calculate.multiply();
+	    return value1 * value2;
 	}
-    },DIVIDE {
+    } 
+   	
+       ,DIVIDE {
 	@Override
-	public double getResult(Calculate calculate) {
+	public double operation(double value1, double value2) {
 	    // TODO Auto-generated method stub
-	    return calculate.divide();
+	    return value1/value2;
 	}
-    };
+    }
+   	
+       ;
 
 
-public abstract double getResult(Calculate calculate);
+   public abstract double operation(double value1,double value2);
 }
